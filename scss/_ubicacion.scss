@@ -1,0 +1,27 @@
+
+main{
+  min-height: 90vh;
+}
+
+.section-title {
+    font-size: 2em;
+    color: $primary-color;
+  }
+  
+  #ubicacion {
+    background-color: #f8f9fa;
+  }
+  
+  .direccion {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .mapa iframe {
+    border-radius: 10px;
+    box-shadow: 0 0 10px;
+  }
+  

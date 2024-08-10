@@ -1,0 +1,21 @@
+// animación
+.navbar-brand {
+  animation: fadeIn 2s ease-in-out;
+}
+
+.navbar-brand {
+  background-color: black;
+  animation: fadeIn 2s ease-in-out;
+  border-radius: 15px;
+  border: solid 2px #e8462e;
+  
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

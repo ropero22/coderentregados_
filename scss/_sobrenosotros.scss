@@ -1,0 +1,59 @@
+.sobre-nosotros {
+    .row {
+      display: flex;
+      align-items: center; 
+    }
+  
+    .col-md-12 {
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+      text-align: center; 
+  
+      .negrita {
+        background-color:$primary-color ; 
+        padding: 20px; 
+        border-radius: 8px;
+        color: black;
+      }
+      
+      .texto-nosotros {
+        max-width: 1300px; 
+        margin: 20px 0; 
+        font-size: 15px;
+        background-color: $primary-color; 
+        padding: 20px; 
+        border-radius: 8px; 
+        color: black;
+    }
+    }
+  }
+
+
+  .img-container {
+   
+    margin: 100px auto 10px;
+    width: 400px;
+    height: 500px;
+    background-image: url('../img_sobrenosotros/imagen_staffcinnco.jpg');
+    background-size: cover;
+    position: relative;
+    background-position: center; 
+   
+
+  
+    &::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background: inherit;
+      z-index: -1;
+      transition: 0.2s;
+    }
+  
+    &:hover::after {
+      transform: scale(1.07);
+      filter: blur(15px) contrast(200%);
+    }
+  }

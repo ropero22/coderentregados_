@@ -1,0 +1,59 @@
+
+.galeria {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 15px;
+
+  img {
+    width: 450px;
+    height: 600px;
+    margin: 10px 0;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      filter: brightness(1.1); 
+    }
+  }
+}
+  .staff {
+  .row {
+    display: flex;
+    align-items: center; 
+  }
+    .col-md-12 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+  }
+
+  .inf_profe { max-width: 1300px; 
+    margin: 20px 0; 
+    font-size: 15px;
+    background-color: $primary-color;
+    padding: 20px;  
+    border-radius: 8px; 
+    color: black;
+}
+}
+
+@media (max-width: 768px) {
+  .galeria {
+    grid-template-columns: 1fr; 
+    grid-template-rows: auto;
+
+    .img5, .img6, .img1 {
+      display: none; 
+    }
+
+    div {
+      img {
+        height: auto; 
+      }
+    }
+  }
+}

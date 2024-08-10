@@ -1,0 +1,18 @@
+@mixin button-styles($padding, $bg-color, $color, $border-radius) {
+  padding: $padding;
+  background-color: $bg-color;
+  color: $color;
+  border: none;
+  border-radius: $border-radius;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+
+  &:hover {
+    background-color: $secondary-color;
+  }
+}
+
+@mixin transition($property, $duration, $timing-function) {
+  transition: $property $duration $timing-function;
+}

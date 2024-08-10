@@ -1,0 +1,43 @@
+.carousel-section {
+    background-color: black; 
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: $primary-color; 
+    border-radius: 50%; 
+    padding: 10px; 
+  }
+  
+  .carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  
+    .carousel-item {
+      display: none;
+      position: relative;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+  
+      &.active {
+        display: flex;
+      }
+  
+      img {
+        max-height: 500px; 
+        width: auto; 
+        object-fit: cover;
+        border-radius: 15px; 
+        margin: 0 auto; 
+      }
+    }
+  
+    @media screen and (max-width: 768px) {
+      img {
+        max-height: 300px; 
+      }
+    }
+  }
