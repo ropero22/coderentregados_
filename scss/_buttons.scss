@@ -19,3 +19,100 @@
 .login-button:hover {
   background-color: brown;
 }
+.back-button {
+  --bs-link-color-rgb: 255, 255, 255; 
+  background-color: #e8462e !important;
+  color: white !important;
+  padding: 10px 20px;
+  border-radius: 15px;
+  text-decoration: none !important;
+  font-weight: bold !important;
+  transition: background-color 0.3s ease !important;
+}
+.video-section .back-button:hover {
+  background-color: $secondary-color;
+}
+
+.submit-button {
+  background-color: #fff;
+  color: #e8462e;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.submit-button:hover {
+  background-color: #f5f5f5;
+}
+
+.back-button {
+  display: block;
+  margin-top: 20px;
+  background-color: #fff;
+  color: #e8462e;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #f5f5f5;
+}
+//formulario registrarse //
+form .button {
+  width: 100%;
+  height: 40px;
+  margin: 40px 0;
+}
+
+form .button input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  cursor: pointer;
+  background: linear-gradient(130deg, blue ,$primary-color );
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+
+}
+
+form .button input:hover {
+  background: linear-gradient(130deg, $primary-color, blue);
+}
+
+.was-validated small {
+  display: block;
+  color: #ccc;
+}
+
+
+.button-back-inicio {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+
+  .back-to-home {
+      padding: 10px 20px;
+      border-radius: 8px;
+      background-color: $primary-color;
+      color: black;
+      font-weight: bold;
+      text-decoration: none;
+      text-align: center;
+      transition: background-color 0.3s ease;
+  }
+
+  .back-to-home:hover {
+      background-color: $secondary-color;
+  }
+}

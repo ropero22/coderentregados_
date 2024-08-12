@@ -167,6 +167,101 @@ a.navbar-brand {
   background-color: brown;
 }
 
+.back-button {
+  --bs-link-color-rgb: 255, 255, 255;
+  background-color: #e8462e !important;
+  color: white !important;
+  padding: 10px 20px;
+  border-radius: 15px;
+  text-decoration: none !important;
+  font-weight: bold !important;
+  transition: background-color 0.3s ease !important;
+}
+
+.video-section .back-button:hover {
+  background-color: brown;
+}
+
+.submit-button {
+  background-color: #fff;
+  color: #e8462e;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.submit-button:hover {
+  background-color: #f5f5f5;
+}
+
+.back-button {
+  display: block;
+  margin-top: 20px;
+  background-color: #fff;
+  color: #e8462e;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #f5f5f5;
+}
+
+form .button {
+  width: 100%;
+  height: 40px;
+  margin: 40px 0;
+}
+
+form .button input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  cursor: pointer;
+  background: linear-gradient(130deg, blue, #e8462e);
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+}
+
+form .button input:hover {
+  background: linear-gradient(130deg, #e8462e, blue);
+}
+
+.was-validated small {
+  display: block;
+  color: #ccc;
+}
+
+.button-back-inicio {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.button-back-inicio .back-to-home {
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: #e8462e;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+.button-back-inicio .back-to-home:hover {
+  background-color: brown;
+}
+
 .pe-section {
   background: url("../img_inicio/a2f371e1075ac5e1ee236514b0cecd83.jpg") no-repeat center;
   background-size: cover;
@@ -431,6 +526,123 @@ main {
 .contact .form-group textarea {
   background: #fff;
   color: #333;
+}
+
+.video-section {
+  background-color: black;
+  padding: 20px 0;
+}
+.video-section .container {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.video-section .video-wrapper {
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.video-section .video-wrapper video {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.video-section .back-button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.video-section .back-button-wrapper .back-button {
+  --bs-link-color-rgb: 255, 255, 255;
+  background-color: #e8462e !important;
+  color: white !important;
+  padding: 10px 20px;
+  border-radius: 15px;
+  text-decoration: none !important;
+  font-weight: bold !important;
+  transition: background-color 0.3s ease !important;
+}
+.video-section .back-button-wrapper .video-section .back-button:hover {
+  background-color: brown;
+}
+
+.social-icons {
+  position: fixed;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  z-index: 1000;
+}
+.social-icons a.social-icon {
+  display: block;
+  margin-bottom: 15px;
+  color: #fff;
+  background-color: #e8462e;
+  padding: 10px;
+  border-radius: 50%;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  transition: background-color 0.3s ease;
+}
+.social-icons a.social-icon:hover {
+  background-color: #ff6347;
+}
+.social-icons a.social-icon i {
+  font-size: 20px;
+}
+
+.registro-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(130deg, blue, #e8462e);
+}
+.registro-container .container {
+  max-width: 600px;
+  width: 100%;
+  background-color: #e8462e;
+  padding: 20px;
+  border-radius: 16px;
+}
+.registro-container .tittle {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.registro-container form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.registro-container form .form-group {
+  margin-bottom: 20px;
+  width: 100%;
+}
+.registro-container form .form-group span {
+  display: block;
+  font-weight: 200;
+  margin-bottom: 5px;
+}
+.registro-container form .form-group input {
+  height: 40px;
+  width: 100%;
+  outline: none;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+.registro-container form .form-group input:focus,
+.registro-container form .form-group input:valid {
+  border-color: black;
 }
 
 * {

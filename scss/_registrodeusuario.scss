@@ -1,0 +1,54 @@
+.registro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(130deg, blue, $primary-color);
+
+    .container {
+        max-width: 600px;
+        width: 100%;
+        background-color: $primary-color;
+        padding: 20px;
+        border-radius: 16px;
+    }
+
+    .tittle {
+        font-size: 25px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .form-group {
+            margin-bottom: 20px;
+            width: 100%;
+
+            span {
+                display: block;
+                font-weight: 200;
+                margin-bottom: 5px;
+            }
+
+            input {
+                height: 40px;
+                width: 100%;
+                outline: none;
+                border-radius: 10px;
+                border: 1px solid #ccc;
+                padding-left: 15px;
+                border-bottom-width: 2px;
+                transition: all 0.3s ease;
+            }
+
+            input:focus,
+            input:valid {
+                border-color: black;
+            }
+        }
+    }
+}
