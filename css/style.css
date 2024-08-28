@@ -263,7 +263,7 @@ form .button input:hover {
 }
 
 .pe-section {
-  background: url("../img_inicio/a2f371e1075ac5e1ee236514b0cecd83.jpg") no-repeat center;
+  background: url("../multimedia/img_inicio/a2f371e1075ac5e1ee236514b0cecd83.jpg") no-repeat center;
   background-size: cover;
   width: 100%;
 }
@@ -355,7 +355,7 @@ form .button input:hover {
   margin: 100px auto 10px;
   width: 400px;
   height: 500px;
-  background-image: url("../img_sobrenosotros/imagen_staffcinnco.jpg");
+  background-image: url("../multimedia/img_sobrenosotros/imagen_staffcinnco.jpg");
   background-size: cover;
   position: relative;
   background-position: center;
@@ -526,6 +526,34 @@ main {
 .contact .form-group textarea {
   background: #fff;
   color: #333;
+}
+
+.social-icons {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.social-icons .social-icon {
+  background-color: #e8462e;
+  color: white;
+  border-radius: 50%;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  width: 50px;
+  height: 50px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.social-icons .social-icon:hover {
+  background-color: #e8462e;
+  transform: scale(1.1);
 }
 
 .video-section {
